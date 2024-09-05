@@ -1,0 +1,14 @@
+// Examples of escape sequences
+// Based on Listing 2.4 on page 61
+
+public class RedRoses
+{
+  public static void main(String[] args)
+  {
+    System.out.println("\"");
+    System.out.println("\'");
+    System.out.println("Roses are red,\nviolets are blue");
+    System.out.println("Roses are red,\tviolets are blue");
+    System.out.println("Roses are red,\\violets are blue");
+  }
+}
