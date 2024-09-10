@@ -4,8 +4,25 @@ public class Zuckerburg {
     TextAsPicture();
   }
   public static void TextAsPicture(){
-    System.out.println(" /|\\^._.^/|\\    /|\\^._.^/|\\\n    /|\\^._.^/|\\   /|\\^._.^/|\\   /|\\^._.^/|\\\n /|\\^._.^/|\\   /|\\^._.^/|\\  /|\\^._.^/|\\\n /|\\^._.^/|\\  /|\\^._.^/|\\" );
-    System.out.println("^^Swarm of Bats^^");
+    int randomNum = (int)(1+ (Math.random() * 3));
+    System.out.println(randomNum);
+    for (int i = 0; i < 200; i++) {
+      randomNum = (int)(1+ (Math.random() * 7));
+      switch(randomNum){
+        case 1:
+          System.out.print("   ");
+          break;
+        case 2:
+          System.out.print("\n");
+          break;
+         case 3:
+          System.out.print("   ");
+          break;
+        default:
+          System.out.print("/|\\^._.^/|\\");
+      }
+    }
+    System.out.println("\n^^Swarm of Bats^^");
   }
 }
     

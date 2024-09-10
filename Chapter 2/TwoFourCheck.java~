@@ -1,0 +1,29 @@
+public class TwoFourCheck {
+  public static void main(String[] args){
+    int bloodMi = 100000;
+    float days = 2.5;
+    byte numone = 1;
+    short numtwo = 999;
+    float tons = 3.5;
+  }
+}
+
+
+
+
+
+
+
+/*2.3-2.4 Notes Check
+
+Write a program that stores the following numbers as variables (make sure to use the appropriate primitive type: int or double):
+
+100000, 2.5, 1, 999, 3.5
+
+Use these variables in your print statements to output the following facts:
+
+Your body contains about 100000 miles of blood vessels.
+The average American spends about 2.5 days a year looking for lost items.
+No number from 1 to 999 includes the letter "a" in its word form.
+The largest scrambled eggs ever made weighed nearly 3.5 tons.
+/*

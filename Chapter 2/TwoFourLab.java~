@@ -1,0 +1,63 @@
+public class TwoFourLab {
+  public static void main(String[] args){
+    
+  }
+}
+
+/*
+ * 2.3-2.4 Lab
+
+Make sure the programs are neat and readable.
+ 
+1. Bagels.java
+Approaching Proficiency [3]
+
+In this lab, you work for a bagel shop.  The shop is having a sale that gives each customer four free bagels, two free coffees, and a $25 gift card to every 500th customer.  Write a program called Bagels.java that declares and assigns a customer's order in the following variables: bagelsOrdered, coffeesOrdered, and giftCardsOrdered (you may just pick values to assign to these variables).  When run, the program should print the an announcement stating the 500th customer's new total order similar to the following:
+ 
+"You are the 500th customer!  
+You get 4 free bagels for a total of ## bagels!
+You get 2 free coffees for a total of @@ coffees!
+You get one $25 gift card for a total of %% gift cards!"
+ 
+## should be the number of bagels the customer ordered, plus 4.
+@@ should be the number of coffees the customer ordered, plus 2.
+%% should be the number of gift cards the customer ordered, plus 1.
+
+
+
+2. Pyramids.java
+Approaching Proficiency [3]
+
+Declare and assign variables representing the number of faces, edges, and vertices of a triangular pyramid like the one shown below:
+
+Print a statement providing all of the above data about this pyramid.  Make sure that the statement is readable to the user.
+
+Assign new values to the above variables (you should not declare them again and you should not declare new variables) representing the parts of a hexagonal pyramid like the one shown below:
+
+
+Print another statement giving all of the data about this pyramid.
+
+
+
+(2.2 Review)
+
+3. Mario.java
+Approaching Proficiency [3]
+
+Write a program called Mario.java that prints the following text exactly as shown, (using quotes, indentations, spacing, etc).  System.out.print or System.out.println may be used up to three times.
+ 
+   /#M#\
+  |########
+  WWW  0|_
+   WW  """
+   ----/
+ _/ H H \_
+|_| HHH |_|
+   HHHHH
+  HH   HH
+ /__| |__\
+
+
+
+
+ * /

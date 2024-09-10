@@ -1,0 +1,7 @@
+public class TwoTreeNotesCheck {
+  public static void main(String[] args){
+    int storedNumber = 122;
+    System.out.print(storedNumber)
+  }
+}
+    
