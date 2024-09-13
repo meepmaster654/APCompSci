@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Average{
+  public static void main(String[] args){
+    Scanner takeInput = new Scanner(System.in);
+    System.out.println("Input 3 numbers you want to take the average of");
+    double numOne, numTwo, numThree;
+    numOne = takeInput.nextDouble();
+    numTwo = takeInput.nextDouble();
+    numThree = takeInput.nextDouble();
+    System.out.println(takeAverage(numOne, numTwo, numThree));
+  }
+  static double takeAverage(double one, double two, double three) {
+    double sum = one + two + three;
+    return sum/3;
+  }
+}
