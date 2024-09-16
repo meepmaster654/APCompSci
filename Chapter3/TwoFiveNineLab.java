@@ -28,8 +28,8 @@ class Pyramids {
 class ImproperFractions {
   public ImproperFractions(int topNum, int botNum){
     int newTop, whole;
-    whole =  topNum%botNum;
-    newTop =  topNum-whole*botNum;
+    newTop =  topNum%botNum;
+    whole = topNum/botNum;
     System.out.println(topNum + "/" + botNum+" = " + whole +" "+newTop + "/" + botNum);
   }
 }
