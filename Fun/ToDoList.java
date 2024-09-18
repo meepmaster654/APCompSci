@@ -8,7 +8,7 @@ public class ToDoList {
         String sentinel = "";
         String newName;
         while (!sentinel.equals("sigma")) {
-          System.out.print("What would you like to do(New, List, Mark As Done)");
+          System.out.print("What would you like to do(New, List, Mark As Done or Remove)");
           sentinel = toDoList.userIn.nextLine();
           if (sentinel.equals("New")) {
             System.out.print("What would you like to name the task: ");
@@ -16,7 +16,16 @@ public class ToDoList {
             toDoList.createNewTask(newName); // Create task with user input
           } else if(sentinel.equals("List")) {
             toDoList.listTasks();
+          } else if(sentinel.equals("Mark As Done")){
+            toDoList.listTasks();
+            System.out.println("Which task would you like to mark as done (number)");
+            toDoList.markDone(toDoList.userIn.nextInt());
+          } else if(sentinel.equals("Remove")){
+            toDoList.listTasks();
+            System.out.println("Which task would you like to remove (number)");
+            toDoList.removeTask(toDoList.userIn.nextInt());
           }
+                    
         }
           toDoList.userIn.close(); 
     }
@@ -45,6 +54,13 @@ public class ToDoList {
             }
       }
     }
+    public void markDone(int doneTask) {
+      if (doneTask <= taskList.size()){
+      taskList.get(doneTask - 1).didIt();
+    }
+    public void removeTask(int removedTask){
+      taskList.remove(removedTask - 1);
+    }
 }
 class Task {
     public String name;
@@ -60,7 +76,7 @@ class Task {
         }
        
     }
-    public void changeName(String newName){
-        name = newName;
+    public void didIt(){
+        complete= true;
     }
 }

@@ -6,16 +6,21 @@ public class ToDoList {
     public static void main(String[] args) {
         ToDoList toDoList = new ToDoList();
         String sentinel = "";
-        
+        String newName;
         while (!sentinel.equals("sigma")) {
+          System.out.print("What would you like to do(New, List, Mark As Done)");
+          sentinel = toDoList.userIn.nextLine();
+          if (sentinel.equals("New")) {
             System.out.print("What would you like to name the task: ");
-            sentinel = toDoList.userIn.nextLine(); // Use the Scanner from the ToDoList instance
-            if (!sentinel.equals("sigma")) {
-                toDoList.createNewTask(sentinel); // Create task with user input
-            }
+            newName = toDoList.userIn.nextLine(); // Use the Scanner from the ToDoList instance
+            toDoList.createNewTask(newName); // Create task with user input
+          } else if(sentinel.equals("List")) {
+            toDoList.listTasks();
+          }
         }
-        toDoList.userIn.close();
+          toDoList.userIn.close(); 
     }
+    
     public void createNewTask(String nameIn) {
         String taskName = nameIn; // Read user input for the task name
 
@@ -26,9 +31,23 @@ public class ToDoList {
         newTask.getTask(); 
         
     }
+    public void listTasks(){
+      if (taskList.isEmpty()) {
+            System.out.println("No tasks available.");
+      } else {
+        for (int i = 0; i < taskList.size(); i++) {
+                Task task = taskList.get(i);
+                if (task.complete) {
+                  System.out.println((i + 1) + ". "+ task.name + " - Done!");
+                }else {
+                  System.out.println((i + 1) + ". "+ task.name + " - Not Done");
+                }
+            }
+      }
+    }
 }
 class Task {
-    private String name;
+    public String name;
     public boolean complete = false;
     public Task(String nameIn) {
         name = nameIn;
