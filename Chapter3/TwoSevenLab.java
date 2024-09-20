@@ -4,6 +4,13 @@ public class TwoSevenLab {
     Scanner userIn = new Scanner(System.in);
     flip(userIn.nextLine());
     statistics(userIn.nextLine(), userIn.nextLine(), userIn.nextLine());
+    myReplaceFirst(userIn.nextLine(), userIn.nextLine(), userIn.nextLine());
+    String[] madLibWords = {"Relative","Adjective","Adjective","Adjective","Name of Person in Room","Adjective","Adjective","Verb Ending in \"ing\"","TYPE OF RELATIVE (brother, aunt, etc.)","Your Name"};
+    for (int i = 0; i < 10; i++) {
+      System.out.println("Type an " + madLibWords[i]);
+      words[i] = userIn.nextLine();
+    }
+    madLib(madLibWords);
   }
   static void flip(String toFlip) {
     String firstHalf, secondHalf;
@@ -21,10 +28,19 @@ public class TwoSevenLab {
   }
   static void myReplaceFirst(String ogString, String toReplace, String, replacement) {
     String revisedText, pivotText;
-    revisedText = ogString.subString(0, ogString.indexOf(toReplace))) + toReplace + ogString.substring((ogString.indexOf(toReplace)+toReplace.length, ogString.length()  - 1);
+    revisedText = ogString.subString(0, ogString.indexOf(toReplace))) + replacement + ogString.substring((ogString.indexOf(toReplace)+toReplace.length, ogString.length()  - 1);
+    pivotText = ogString.substring((ogString.indexOf(toReplace)+toReplace.length, ogString.length()  - 1) + replacement + ogString.subString(0, ogString.indexOf(toReplace)));
     System.out.println("Revised string: " + revisedText);
     System.out.println("Pivoted string: " + pivotedText);
     System.out.println("The length of the original string is " + ogString.length());
     System.out.println("The lengths of the new strings are " + revisedText.length());
+  }
+  static void madLib(String[] words) {
+    System.out.println("Dear " +  words[0] + ",");
+    System.out.println("I am having a(n) " + words[1] + " time at camp. The counselor is " +  words[2] + "  and the food");
+    System.out.println("is " + words[3] + ".  I met " + words[4] + " and we became " words[5] + " friends. Unfortunately,");
+    System.out.println(words[4] + " is " +  words[6] + " so we couldn’t go " + words[7] + " like everybody else.");
+    System.out.println("Your " + words[8] + ",");
+    System.out.println(words[9]);
   }
 }
