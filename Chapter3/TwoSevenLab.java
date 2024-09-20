@@ -19,4 +19,12 @@ public class TwoSevenLab {
     System.out.println("The length of the text is " + mainText.length() + " characters long");
     System.out.println("The length of " + wordOne + " and " + wordTwo + " is " (wordOne.length() + wordTwo.length()) + " characters long");
   }
+  static void myReplaceFirst(String ogString, String toReplace, String, replacement) {
+    String revisedText, pivotText;
+    revisedText = ogString.subString(0, ogString.indexOf(toReplace))) + toReplace + ogString.substring((ogString.indexOf(toReplace)+toReplace.length, ogString.length()  - 1);
+    System.out.println("Revised string: " + revisedText);
+    System.out.println("Pivoted string: " + pivotedText);
+    System.out.println("The length of the original string is " + ogString.length());
+    System.out.println("The lengths of the new strings are " + revisedText.length());
+  }
 }
