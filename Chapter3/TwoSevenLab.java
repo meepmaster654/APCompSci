@@ -6,7 +6,7 @@ public class TwoSevenLab {
     flip(userIn.nextLine());
     System.out.print("Input a bit of text, a word to find, and another word to find");
     statistics(userIn.nextLine(), userIn.nextLine(), userIn.nextLine());
-    System.out.println("Input a string of text, a word to replace & pivot around, and the word to replace it with);
+    System.out.println("Input a string of text, a word to replace & pivot around, and the word to replace it with");
     myReplaceFirst(userIn.nextLine(), userIn.nextLine(), userIn.nextLine());
     String[] madLibWords = {"Relative","Adjective","Adjective","Adjective","Name of Person in Room","Adjective","Adjective","Verb Ending in \"ing\"","TYPE OF RELATIVE (brother, aunt, etc.)","Your Name"};
     for (int i = 0; i < 10; i++) {
