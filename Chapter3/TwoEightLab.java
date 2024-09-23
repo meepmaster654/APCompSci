@@ -18,7 +18,7 @@ public class TwoEightLab {
     System.out.println("Surface Area: " + surfaceArea);
   }
   static void distance(double xOne, double yOne, double xTwo, double yTwo) {
-    final double dist = Math.sqrt(Math.pow((xTwo - xOne),2) + Math.pow((yTwo - yOne),2));
+    final double dist = Math.hypot((xTwo - xOne), (yTwo - yOne));
     System.out.println("The distance between (" + xOne + ", " + yOne + ") and (" + xTwo + ", " + yTwo + ") is: " + dist);
   }
   static void phoneNumber() {
