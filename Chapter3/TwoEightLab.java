@@ -11,14 +11,14 @@ public class TwoEightLab {
     phoneNumber();
   }
   static void sphere(double radius) {
-    double volume = (double) 4/(double)3*(Math.PI*(r**3));
-    double surfaceArea = (double) 4 * (Math.PI*(r**2));
+    double volume = (double) 4/(double)3*(Math.PI*(Math.pow(radius,3)));
+    double surfaceArea = (double) 4 * (Math.PI*(Math.pow(radius,2)));
     System.out.println("Radius: " + radius);
     System.out.println("Volume " + volume);
     System.out.println("Surface Area: " + surfaceArea);
   }
   static void distance(double xOne, double yOne, double xTwo, double yTwo) {
-    final double dist = Math.sqrt((xTwo - xOne)**2 + (yTwo - yOne)**2);
+    final double dist = Math.sqrt(Math.pow((xTwo - xOne),2) + Math.pow((yTwo - yOne),2));
     System.out.println("The distance between (" + xOne + ", " + yOne + ") and (" + xTwo + ", " + yTwo + ") is: " + dist);
   }
   static void phoneNumber() {
