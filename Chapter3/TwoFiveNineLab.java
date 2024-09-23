@@ -7,7 +7,9 @@ public class TwoFiveNineLab {
     System.out.println("Input the base sides of your pyramid:");
     Pyramids twoSix = new Pyramids(userInput.nextInt());
     System.out.println("Input the numerator of your fraction, click enter, then enter the denominator");
-    ImproperFractions twoSever = new ImproperFractions(userInput.nextInt(),userInput.nextInt());
+    ImproperFractions twoSeven = new ImproperFractions(userInput.nextInt(),userInput.nextInt());
+    System.out.println("Input the amount of seconds to convert");
+    Time twoEight = new Time(userInput.nextInt());
   }
 }
 class FToCTemp {
@@ -26,10 +28,19 @@ class Pyramids {
 }
 
 class ImproperFractions {
-  public ImproperFractions(int topNum, int botNum){
+  public ImproperFractions(int topNum, int botNum){//Testing out multiple cursors
     int newTop, whole;
-    newTop =  topNum%botNum;
-    whole = topNum/botNum;
     System.out.println(topNum + "/" + botNum+" = " + whole +" "+newTop + "/" + botNum);
-  }
+  }//Testing out multiple cursors
 }
+class Time {
+  public Time(int seconds){
+    int hours, secNoHours, minutes, secNoHourMinutes;
+    hours = seconds/3600;
+    secNoHours = seconds % 3600;
+    minutes = secNoHours / 60;
+    secNoHourMinutes = secNoHours% 60;
+    System.out.print("There are " + hours + " hours, " + minutes + " minutes, and " + secNoHourMinutes + " seconds in " + seconds + " seconds.");
+    //Testing out multiple cursors
+  }
+}//Testing out multiple cursors
