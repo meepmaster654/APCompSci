@@ -1,0 +1,28 @@
+// Will Leasure
+import java.lang.Math;
+public class TestTemplate {
+  public static void main(String[] args) {
+    String output = "The diagonal of a square prism with width: ___ \n";
+    output = output + "and height: ___ is equal to ___ ";
+    
+    // Generate and store random int according to directions
+    int width = (int) ((Math.random()*13)+2);
+    // Generate and store random double according to directions
+    
+    
+    // Miscellaneous calculations
+    
+    
+    // String manipulation
+    int locationOf1 = /* fill in missing code */;
+    int locationOf2 = /* fill in missing code */;
+    int locationOf3 = /* fill in missing code */;
+    
+    String phraseTo1 = /* fill in missing code */;
+    String phrase1To2 = /* fill in missing code */;
+    String phrase2To3 = /* fill in missing code */;
+    
+    output = /* fill in missing code */;
+    System.out.println(output);
+  }
+}
