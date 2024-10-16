@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class SpRoPa {
+  public static void main(String[] args) {
+    for (int i = 0, i < 100, i++){
+      int choiceNum = (Math.random()*2)+1;
+    }
+    System.out.print(choiceNum);
+    switch(choiceNum) {
+      case 1:
+        
+      case 2:
+        
+      case 3:
+        
+    }
+  }
+}

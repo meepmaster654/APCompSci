@@ -1,0 +1,58 @@
+import java.lang.Math;
+import java.util.Scanner;
+
+public class MyClasss {
+    public static void main(String[] args) {
+    //Setup
+        Scanner userIn = new Scanner(System.in);
+    //Positive.java
+        double inputedValue = -1;
+        while (inputedValue < 0) {
+            System.out.println("Input a positive value");
+            inputedValue = userIn.nextDouble();
+        }
+    //Guess.java
+        int maxRange = userIn.nextInt();
+        int minRange = userIn.nextInt();
+        while (minRange > maxRange) {
+            System.out.println("The minimum you inputed was less than the maximum of " + maxRange);
+            minRange = userIn.nextInt();
+             }
+           int randomNumber = (int)((Math.random() *(maxRange - minRange)) + minRange);
+        int userGuess = userIn.nextInt();
+        while (userGuess != randomNumber) {
+            System.out.println("That was not the right answer");
+            if (userGuess < randomNumber){
+                System.out.println("Too Low");
+            } else {
+                System.out.println("Too High");
+            }
+            userGuess = userIn.nextInt();
+        }
+        System.out.println("You did it!!!!!");
+    //Collatz.java
+        int input = userIn.nextInt();
+        while (input > 0) {
+            System.out.print("List of numbers: " + input + " ");
+            while (input != 1) {
+                if (input % 2 == 0) {
+                    input /= 2;
+                } else {
+                    input = (input * 3) + 1;
+                }
+                System.out.print(input + " ");
+            }
+            input = userIn.nextInt();
+        }
+   //Trips trippy tripster challenge
+           int numForReversal = userIn.nextInt();
+           String numToString = String.valueOf(numForReversal);
+           String reversedStr = "";
+           for (int i = 0; i < numToString.length(); i++) {
+              reversedStr = numToString.charAt(i) + reversedStr;
+        }
+        System.out.println(reversedStr);
+        int finalNum = Math.abs(numForReversal - Integer.parseInt(reversedStr));
+        System.out.println("The difference from the first number to its reverse is: " + finalNum);
+   }
+}
