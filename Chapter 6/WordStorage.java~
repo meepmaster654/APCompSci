@@ -1,0 +1,47 @@
+//--------------------------------------------------
+// Name:
+//--------------------------------------------------
+
+/* 1 point for following Google Style Guide and Clean Code */
+public class WordStorage {
+  private String[] words = null;
+  
+  /* 1 point */
+  public WordStorage(int maxLength) {
+    /* to be implemented in part (a) */
+    
+
+    resetWords(1, maxLength); // do not change this line
+  }
+  
+  
+  /* 1 point */
+  public void resetWords(int min, int max) {
+    /* to be implemented in part (b) */
+  }
+  
+  
+  /* 1 point */
+  public boolean addWord(String word) {
+    /* to be implemented in part (c) */
+  }
+  
+  
+  /* 1 point */
+  public int getLetterTotal() {
+    /* to be implemented in part (e) */
+  }
+  
+  
+  /* 2 points */
+  public String getAcronym() {
+    /* to be implemented in part (f) */
+  }
+  
+  
+  /* 1 point */
+  public String toString() {
+    /* to be implemented in part (d) */
+  }
+  
+}

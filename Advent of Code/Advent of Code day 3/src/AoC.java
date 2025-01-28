@@ -31,10 +31,8 @@ public class AoC {
       int index = input.indexOf("mul(");
       //clip instance of mul
       String clippedString = "";
-      if (input.indexOf(")") != -1) {
-        clippedString = input.substring(index, input.indexOf(")"));
-        input = input.substring(input.indexOf(")"));
-      }
+      clippedString = input.substring(index, index+12);
+      input = input.substring(input.indexOf(")"));
       //delete input before mul
       
       //multiply the 2 nubers if the mul is not corrupt

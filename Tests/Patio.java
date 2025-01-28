@@ -2,15 +2,10 @@
 import java.util.Scanner;
 public class Patio{
   public static void main(String[] args){
-    double length, width, area, perimeter;
-    Scanner userInput = new Scanner(System.in);
-    System.out.println("Hello!! Thank you for coming to Perfect Patios!!");
-    System.out.println("How long would you like your patio to be?");
-    length = userInput.nextDouble();
-    System.out.println("How wide would you like your patio to be?");
-    width = userInput.nextDouble();
-    area = length*width;
-    perimeter = width + width + length + length; 
-    System.out.println("/\\| For a patio of length " + length + " feet and width " + width + " feet |/\\\n    the area is " + area + " square feet and\n    the perimeter is "  + perimeter + " feet.");
+    System.out.println(args);
+    System.out.println(args[0]);
+    for (int i = 0; i < args.length; i++) {
+      System.out.println(args[i]);
+    }
   }
 }

@@ -1,0 +1,28 @@
+//Will Leasure
+public class HourlyShift implements Job {
+  static int weeklyHours;
+  static double totalPay;
+  private int hours;
+  private int rate;
+  public HourlyShift(int hours, double rate) {
+    this.hours = hours;
+    this.rate = rate;
+    if (weeklyHours + hours <= 40) {
+      updateWithRegularPay();
+    } else {
+      updateWithOvertimePay();
+    }
+    
+  }
+  public void updateWithRegularPay() {
+    totalPay += hours * rate;
+    weeklyHours += hours;
+  }
+  public void updateWithOvertimePay() {
+    regHours = 40 - weeklyHours;
+    totalPay += regHours * rate;
+    hours -= regHours;
+    totalPay += hours * rate * 1.5;
+    weeklyHours += hours;
+  }
+}
