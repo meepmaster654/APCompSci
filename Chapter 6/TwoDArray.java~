@@ -1,0 +1,24 @@
+//--------------------------------------------------
+// Name:
+//--------------------------------------------------
+
+public class TwoDArray {
+  private int[][] array = null;
+  
+  public TwoDArray(int rows, int cols, int targetRow, int targetCol)
+  {  /* to be completed in part (a) */  }
+  
+
+  public boolean equals(int[][] other) 
+  {  /* to be completed in part (b) */  }
+
+
+  public void transpose() 
+  {  /* to be completed in part (c) */  }
+  
+
+  public void printArray()
+  {  /* to be completed in part (d) */  }
+  
+
+}
